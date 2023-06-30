@@ -1,4 +1,9 @@
-slovo = input()
-a = len(slovo) // 2
-print(slovo[:a] == slovo[:len(slovo)-a-1:-1])
+r=input()
 
+def pal(s):
+    slovo_naoborot = s[::-1]
+    if slovo_naoborot == s:
+        print("True")
+    else:
+        print("False")
+pal(r)  
